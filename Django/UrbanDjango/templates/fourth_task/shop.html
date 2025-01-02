@@ -1,1 +1,15 @@
-
+{% extends "menu.html" %}
+<head>
+    <meta charset="UTF-8">
+    <title>platform/shop/</title>
+    <h1>Игры</h1>
+</head>
+<body>
+    {% block pagename %}
+        {{ block.super }}
+    {% endblock %}
+    {% block shop %}
+        {{ block.super }}
+    {% endblock %}
+</body>
+</html>
