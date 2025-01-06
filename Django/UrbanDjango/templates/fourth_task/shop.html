@@ -1,22 +1,19 @@
+{% extends "menu.html" %}
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>platform/shop/</title>
-    <h1>Игры</h1>
-</head>
 <body>
+<head>
     {% block pagename %}
         <meta charset="UTF-8">
         <title>platform/</title>
-        <h1>Главная страница</h1>
+        <h1>ИГРЫ</h1>
+    {% endblock %}
+</head>
+    {% block menu %}
+       {{ block.super }}
     {% endblock %}
     {% block shop %}
-    <ul>
-        <li><h2>Тетрис</h2></li> <a href="#"><button>Купить</button></a>
-        <li><h2>Змейка</h2></li><a href="#"><button>Купить</button></a>
-        <li><h2>Волк ловит яйца</h2></li><a href="#"><button>Купить</button></a>
-    </ul>
+        {{ block.super }}
     {% endblock %}
 </body>
 </html>
